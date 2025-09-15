@@ -16,6 +16,7 @@
       --content-max-width: 1200px;
     }
     
+    /* 基础样式 */
     .app-name {
       font-size: 1.5rem;
       font-weight: bold;
@@ -56,6 +57,276 @@
     
     .cover p {
       color: rgba(255,255,255,0.9);
+    }
+
+    /* 响应式设计 */
+    
+    /* 平板设备 (768px - 1024px) */
+    @media screen and (max-width: 1024px) {
+      :root {
+        --sidebar-width: 280px;
+        --content-max-width: 100%;
+      }
+      
+      .app-name {
+        font-size: 1.3rem;
+      }
+      
+      .markdown-section {
+        padding: 0 20px;
+      }
+      
+      .markdown-section h1 {
+        font-size: 1.8rem;
+      }
+      
+      .markdown-section h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* 手机设备 (最大768px) */
+    @media screen and (max-width: 768px) {
+      :root {
+        --sidebar-width: 100%;
+        --content-max-width: 100%;
+        --base-font-size: 13px;
+      }
+      
+      /* 侧边栏移动端样式 */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      }
+      
+      .sidebar.open {
+        left: 0;
+      }
+      
+      /* 侧边栏遮罩 */
+      .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+        display: none;
+      }
+      
+      .sidebar-overlay.show {
+        display: block;
+      }
+      
+      /* 主内容区域 */
+      .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 60px 15px 20px 15px;
+      }
+      
+      /* 导航栏移动端样式 */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background: #fff;
+        border-bottom: 1px solid #e1e4e8;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .navbar .app-name {
+        font-size: 1.1rem;
+        margin: 0;
+        flex: 1;
+      }
+      
+      /* 移动端菜单按钮 */
+      .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #42b983;
+        cursor: pointer;
+        padding: 5px;
+        margin-right: 10px;
+      }
+      
+      /* 隐藏桌面端菜单按钮 */
+      .desktop-menu-btn {
+        display: none;
+      }
+      
+      /* 移动端搜索框 */
+      .search-input {
+        width: 100%;
+        max-width: 200px;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+      
+      /* 内容区域调整 */
+      .markdown-section {
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      
+      .markdown-section h1 {
+        font-size: 1.6rem;
+        margin-top: 0;
+        padding-top: 20px;
+      }
+      
+      .markdown-section h2 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+      }
+      
+      .markdown-section h3 {
+        font-size: 1.1rem;
+        margin-top: 25px;
+      }
+      
+      /* 表格响应式 */
+      .markdown-section table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+      }
+      
+      .markdown-section table thead,
+      .markdown-section table tbody,
+      .markdown-section table tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+      }
+      
+      /* 代码块调整 */
+      .markdown-section pre {
+        font-size: 12px;
+        overflow-x: auto;
+        padding: 10px;
+        margin: 15px 0;
+      }
+      
+      /* 封面页移动端 */
+      .cover {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      
+      .cover h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      
+      .cover p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+      
+      .cover .cover-main {
+        max-width: 100%;
+      }
+      
+      /* 按钮组移动端 */
+      .cover .cover-main > p:last-child a {
+        display: block;
+        margin: 10px 0;
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+    }
+
+    /* 超小屏幕设备 (最大480px) */
+    @media screen and (max-width: 480px) {
+      :root {
+        --base-font-size: 12px;
+      }
+      
+      .markdown-section {
+        padding: 0 8px;
+      }
+      
+      .markdown-section h1 {
+        font-size: 1.4rem;
+      }
+      
+      .markdown-section h2 {
+        font-size: 1.2rem;
+      }
+      
+      .cover h1 {
+        font-size: 1.6rem;
+      }
+      
+      .cover p {
+        font-size: 0.9rem;
+      }
+      
+      .navbar {
+        padding: 0 10px;
+      }
+      
+      .navbar .app-name {
+        font-size: 1rem;
+      }
+    }
+
+    /* 桌面端隐藏移动端按钮 */
+    @media screen and (min-width: 769px) {
+      .mobile-menu-btn {
+        display: none !important;
+      }
+      
+      .desktop-menu-btn {
+        display: block;
+      }
+      
+      .sidebar-overlay {
+        display: none !important;
+      }
+    }
+
+    /* 打印样式 */
+    @media print {
+      .sidebar,
+      .navbar,
+      .mobile-menu-btn,
+      .sidebar-overlay {
+        display: none !important;
+      }
+      
+      .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+      }
+      
+      .markdown-section {
+        padding: 0 !important;
+      }
     }
   </style>
 </head>
@@ -101,10 +372,185 @@
             const editHtml = '[:memo: 编辑此页](' + url + ')\n\n';
             return editHtml + html;
           });
+          
+          // 移动端响应式功能
+          hook.afterEach(function (html) {
+            // 添加移动端菜单按钮和遮罩
+            if (window.innerWidth <= 768) {
+              const menuBtn = document.createElement('button');
+              menuBtn.className = 'mobile-menu-btn';
+              menuBtn.innerHTML = '☰';
+              menuBtn.onclick = toggleSidebar;
+              
+              const overlay = document.createElement('div');
+              overlay.className = 'sidebar-overlay';
+              overlay.onclick = closeSidebar;
+              
+              document.body.appendChild(overlay);
+              
+              // 在导航栏中添加菜单按钮
+              const navbar = document.querySelector('.navbar');
+              if (navbar && !navbar.querySelector('.mobile-menu-btn')) {
+                navbar.insertBefore(menuBtn, navbar.firstChild);
+              }
+            }
+            
+            return html;
+          });
+          
+          // 窗口大小改变时重新初始化
+          hook.doneEach(function () {
+            initResponsiveFeatures();
+          });
         }
       ]
     }
   </script>
+  
+  <!-- 响应式功能脚本 -->
+  <script>
+    // 移动端侧边栏控制
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      
+      if (sidebar && overlay) {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('show');
+        
+        // 防止背景滚动
+        if (sidebar.classList.contains('open')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      }
+    }
+    
+    function closeSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      
+      if (sidebar && overlay) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+    }
+    
+    // 初始化响应式功能
+    function initResponsiveFeatures() {
+      // 窗口大小改变时的处理
+      window.addEventListener('resize', function() {
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        
+        if (window.innerWidth > 768) {
+          // 桌面端：关闭移动端样式
+          if (sidebar) {
+            sidebar.classList.remove('open');
+            sidebar.style.position = '';
+            sidebar.style.left = '';
+            sidebar.style.width = '';
+            sidebar.style.height = '';
+            sidebar.style.zIndex = '';
+            sidebar.style.transition = '';
+            sidebar.style.overflowY = '';
+            sidebar.style.boxShadow = '';
+          }
+          
+          if (overlay) {
+            overlay.classList.remove('show');
+            overlay.style.display = 'none';
+          }
+          
+          document.body.style.overflow = '';
+          
+          // 移除移动端菜单按钮
+          const menuBtn = document.querySelector('.mobile-menu-btn');
+          if (menuBtn) {
+            menuBtn.remove();
+          }
+        } else {
+          // 移动端：应用移动端样式
+          if (sidebar) {
+            sidebar.style.position = 'fixed';
+            sidebar.style.top = '0';
+            sidebar.style.left = '-100%';
+            sidebar.style.width = '100%';
+            sidebar.style.height = '100vh';
+            sidebar.style.background = '#fff';
+            sidebar.style.zIndex = '1000';
+            sidebar.style.transition = 'left 0.3s ease';
+            sidebar.style.overflowY = 'auto';
+            sidebar.style.boxShadow = '2px 0 10px rgba(0,0,0,0.1)';
+          }
+          
+          if (overlay) {
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.background = 'rgba(0,0,0,0.5)';
+            overlay.style.zIndex = '999';
+            overlay.style.display = 'none';
+          }
+        }
+      });
+      
+      // 点击侧边栏链接时关闭侧边栏（移动端）
+      document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+          const sidebarLink = e.target.closest('.sidebar-nav a');
+          if (sidebarLink) {
+            closeSidebar();
+          }
+        }
+      });
+      
+      // ESC键关闭侧边栏
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeSidebar();
+        }
+      });
+      
+      // 触摸手势支持
+      let startX = 0;
+      let startY = 0;
+      
+      document.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      });
+      
+      document.addEventListener('touchend', function(e) {
+        if (window.innerWidth <= 768) {
+          const endX = e.changedTouches[0].clientX;
+          const endY = e.changedTouches[0].clientY;
+          const diffX = startX - endX;
+          const diffY = startY - endY;
+          
+          // 从左边缘向右滑动打开侧边栏
+          if (startX < 50 && diffX < -100 && Math.abs(diffY) < 100) {
+            toggleSidebar();
+          }
+          
+          // 向右滑动关闭侧边栏
+          if (diffX > 100 && Math.abs(diffY) < 100) {
+            closeSidebar();
+          }
+        }
+      });
+    }
+    
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      initResponsiveFeatures();
+    });
+  </script>
+  
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- 搜索插件 -->
