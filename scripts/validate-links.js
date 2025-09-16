@@ -23,6 +23,12 @@ class LinkValidator {
 
     while ((match = linkRegex.exec(content)) !== null) {
       const [fullMatch, title, url] = match;
+      
+      // 跳过Markdown格式说明中的示例链接
+      if (url === '链接' || url === 'alt') {
+        continue;
+      }
+      
       links.push({
         title: title.trim(),
         url: url.trim(),

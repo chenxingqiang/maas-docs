@@ -77,6 +77,10 @@
 - [部署步骤](README.md#-部署步骤)
 - [文档编辑](README.md#-文档编辑)
 - [部署指南](DEPLOYMENT.md)
+- [API文档](docs/API.md)
+- [贡献指南](CONTRIBUTING.md)
+- [安全策略](SECURITY.md)
+- [更新日志](CHANGELOG.md)
 
 ## 📞 支持与反馈
 - [联系我们](README.md#-联系我们)
