@@ -1,0 +1,41 @@
+{
+  "name": "maas-platform-docs",
+  "version": "1.0.0",
+  "description": "大模型MaaS平台技术文档 - 一个完整的大模型即服务(MaaS)平台技术文档系统",
+  "main": "index.html",
+  "scripts": {
+    "dev": "docsify serve . --port 3000 --open",
+    "build": "docsify generate .",
+    "deploy": "gh-pages -d .",
+    "lint": "markdownlint docs/**/*.md",
+    "format": "prettier --write docs/**/*.md",
+    "validate": "node scripts/validate-links.js",
+    "test": "node scripts/test-docs.js"
+  },
+  "keywords": [
+    "maas",
+    "ai",
+    "machine-learning",
+    "documentation",
+    "docsify",
+    "chinese",
+    "enterprise"
+  ],
+  "author": "图灵智能团队",
+  "license": "MIT",
+  "devDependencies": {
+    "docsify-cli": "^4.4.4",
+    "gh-pages": "^6.0.0",
+    "markdownlint-cli": "^0.37.0",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenxingqiang/maas-docs.git"
+  },
+  "homepage": "https://chenxingqiang.github.io/maas-docs/",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

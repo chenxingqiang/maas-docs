@@ -1,0 +1,25 @@
+{
+  "name": "大模型MaaS平台文档",
+  "short_name": "MaaS文档",
+  "description": "大模型MaaS平台项目技术文档系统",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#42b983",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik05NiA0OEM3MS44MTk0IDQ4IDUyIDY3LjgxOTQgNTIgOTJWNzJDNTIgNDcuODE5NCA3MS44MTk0IDI4IDk2IDI4QzEyMC4xODEgMjggMTQwIDQ3LjgxOTQgMTQwIDcyVjkyQzE0MCA2Ny44MTk0IDEyMC4xODEgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTQwIDkySDQ4QzQ4IDEyMC4xODEgNjcuODE5NCAxNDAgOTYgMTQwQzEyMC4xODEgMTQwIDE0MCAxMjAuMTgxIDE0MCA5MloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSIxOTIiIHkyPSIxOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzQyYjk4MyIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NjdFZWEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0yNTYgMTI4QzE5MS4zNzYgMTI4IDEzOCAxODEuMzc2IDEzOCAyNDZIMTI4QzEyOCAxNzEuMzc2IDE5MS4zNzYgMTA4IDI1NiAxMDhDMzIwLjYyNCAxMDggMzg0IDE3MS4zNzYgMzg0IDI0NkgzNzRDMzc0IDE4MS4zNzYgMzIwLjYyNCAxMjggMjU2IDEyOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zNzQgMjQ2SDEzOEMxMzggMzIwLjYyNCAxOTEuMzc2IDM4NCAyNTYgMzg0QzMyMC42MjQgMzg0IDM3NCAzMjAuNjI0IDM3NCAyNDZaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDBfbGluZWFyXzFfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNTEyIiB5Mj0iNTEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0MmI5ODMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjY3RWVhIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["documentation", "productivity", "education"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}

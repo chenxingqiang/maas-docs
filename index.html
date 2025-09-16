@@ -6,21 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="大模型MaaS平台项目文档 - 包含门户、管理、运营、工具集市、社区等模块的详细技术文档">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="MaaS,大模型,AI,机器学习,文档,技术文档,企业级">
+  <meta name="author" content="图灵智能团队">
+  
+  <!-- 性能优化 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" as="style">
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js" as="script">
+  
+  <!-- PWA支持 -->
+  <meta name="theme-color" content="#42b983">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MaaS文档">
+  
+  <!-- 缓存策略 -->
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  
+  <!-- PWA清单 -->
+  <link rel="manifest" href="manifest.json">
+  
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <style>
-    :root {
-      --base-font-size: 14px;
-      --theme-color: #42b983;
-      --sidebar-width: 300px;
-      --content-max-width: 1200px;
-    }
+        :root {
+          --base-font-size: 14px;
+          --theme-color: #42b983;
+          --sidebar-width: 300px;
+          --content-max-width: 1200px;
+          --header-height: 60px;
+          --border-radius: 8px;
+          --shadow: 0 2px 8px rgba(0,0,0,0.1);
+          --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
     
     /* 基础样式 */
     .app-name {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #2c3e50;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     
     .sidebar-nav > ul > li > a {
